@@ -6859,6 +6859,7 @@ textarea.form-control-lg {
 
 .border-top-0 {
   border-top: 0 !important;
+    background-color: #fff;
 }
 
 .border-end {
@@ -7429,6 +7430,7 @@ textarea.form-control-lg {
 
 .p-4 {
   padding: 1.5rem !important;
+  background-color: #fff;
 }
 
 .p-5 {
@@ -7863,7 +7865,8 @@ textarea.form-control-lg {
 
 .bg-transparent {
   --bs-bg-opacity: 1;
-  background-color: transparent !important;
+  background-color: #fff !important;
+
 }
 
 .bg-opacity-10 {
