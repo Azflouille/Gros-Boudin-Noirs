@@ -16,30 +16,56 @@
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">Atelier 17.91</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="html/aPropos.html">A propos</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Tous les produits</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="html/page1.html">Catégorie 1</a></li>
-                                <li><a class="dropdown-item" href="html/page2.html">Catégorie 2</a></li>
-                                <li><a class="dropdown-item" href="html/page3.html">Catégorie 3</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+            <div class="container px-4 px-lg-5" >
+                <div id="main">
+
+
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <a class="navbar-brand" href="#!">Atelier 17.91</a>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/aPropos.html">A propos</a></li>
+
+                </ul>
+
+                </div>
                     <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            Panier
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
+                        <div id="mySidebar" class="sidebar">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div>
+                                Votre boite:
+                                <!--Contenu du panier -->
+                                <div id="cart-content"></div>
+                            </div>
+                            <div>
+                                Poids Total:
+                                <p id="cart-total"></p>
+                            </div>
+
+                        </div>
+
+                        <div id="mai">
+                            <button class="openbtn btn btn-outline-dark" type="submit" onclick="openNav()">
+                                <i class="bi-cart-fill me-1"></i>
+                                Boite
+                                <span class="badge bg-dark text-white ms-1 rounded-pill" id="total-products">0</span>
+
+                            </button>
+
+                        </div>
+
+                        <script>
+                            function openNav() {
+                                document.getElementById("mySidebar").style.width = "250px";
+                                document.getElementById("main").style.marginLeft = "250px";
+                            }
+
+                            function closeNav() {
+                                document.getElementById("mySidebar").style.width = "0";
+                                document.getElementById("main").style.marginLeft= "0";
+                            }
+                        </script>
+
                     </form>
                 </div>
             </div>

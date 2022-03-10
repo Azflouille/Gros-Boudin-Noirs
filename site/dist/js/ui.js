@@ -20,7 +20,7 @@ function displayProduct(prod){
             </div>
             <!-- Product actions-->
             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                <div class="text-center"><a class="btn btn-outline-dark mt-auto product-add2cart" href="#">Ajouter au panier</a></div>
+                <div class="text-center"><a class="btn btn-outline-dark mt-auto product-add2cart">Ajouter au panier</a></div>
             </div>
         </div>
     </div>
@@ -46,8 +46,9 @@ let displayCart = () => {
     <tr>
         <td data-type="ref">${helmet[0].ref}</td>
         <td data-type="qte">x${helmet[1]}</td>
-        <td data-type="amount">${(helmet[1] * helmet[0].price).toFixed(2)}€</td>
+        <td data-type="amount">${(helmet[1] * helmet[0].poids).toFixed(2)}kg</td>
     </tr>
+    <br>
     `
     ).reduce((p, c) => p + c, '');
 
@@ -55,7 +56,7 @@ let displayCart = () => {
     let total = document.querySelector('#cart-total');
     let size = document.querySelector('#total-products');
     cart.genericCalc((res,qty) => {
-        total.innerHTML = res.toFixed(2) + '€';
+        total.innerHTML = res.toFixed(2) + 'kg';
         size.innerHTML = qty;
     })
 }

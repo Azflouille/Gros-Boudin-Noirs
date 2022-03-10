@@ -15,7 +15,9 @@ function init(){
     videPanier.addEventListener('click', (e) => {
         cart.emptyCart();
         ui.displayCart();
-    })
+    });
+
+
 
 }
 

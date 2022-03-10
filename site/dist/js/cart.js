@@ -9,7 +9,7 @@ let addToCart = (product, qty) => {
 }
 
 let genericCalc = (callback) => {
-    callback(cart.reduce((p,c)=> p+c[0].price*c[1], 0), cart.reduce((p,c)=> p+c[1], 0));
+    callback(cart.reduce((p,c)=> p+c[0].poids*c[1], 0), cart.reduce((p,c)=> p+c[1], 0));
 }
 
 let emptyCart = () => {
