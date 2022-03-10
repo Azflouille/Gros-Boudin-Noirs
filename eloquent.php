@@ -16,8 +16,3 @@ $db->bootEloquent();
 
 print("Connecté à la base de données \n");
 
-$items = \wishlist\model\Item::all();
-
-foreach ($items as $item) {
-    print $item->id . ' ' . $item->nom . "\n";
-}
