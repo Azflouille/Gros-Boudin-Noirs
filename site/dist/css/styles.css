@@ -7842,7 +7842,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #E77441 !important;
 }
 
 .bg-black {
@@ -11285,4 +11285,8 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+.imagee{
+    height: 200px;
 }
