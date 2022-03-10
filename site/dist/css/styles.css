@@ -76,6 +76,10 @@
   }
 }
 
+.boxB{
+  display: flex;
+}
+
 .aligncenter{
     margin-left: 43.5%;
     margin-right: auto;
