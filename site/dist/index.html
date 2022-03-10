@@ -29,9 +29,9 @@
                 </ul>
 
                 </div>
-                    <form class="d-flex">
+                    <div class="d-flex">
                         <div id="mySidebar" class="sidebar">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="javascript:void(0)" id="btnclose" class="closebtn">&times;</a>
                             <div>
                                 Votre boite:
                                 <!--Contenu du panier -->
@@ -41,11 +41,11 @@
                                 Poids Total:
                                 <p id="cart-total"></p>
                             </div>
-
+                            <btn class="btn btn-outline-dark" id="empty-cart">Vider la boite</btn>
                         </div>
 
                         <div id="mai">
-                            <button class="openbtn btn btn-outline-dark" type="submit" onclick="openNav()">
+                            <button id="btnopen" class="openbtn btn btn-outline-dark">
                                 <i class="bi-cart-fill me-1"></i>
                                 Boite
                                 <span class="badge bg-dark text-white ms-1 rounded-pill" id="total-products">0</span>
@@ -54,21 +54,10 @@
 
                         </div>
 
-                        <script>
-                            function openNav() {
-                                document.getElementById("mySidebar").style.width = "250px";
-                                document.getElementById("main").style.marginLeft = "250px";
-                            }
 
-                            function closeNav() {
-                                document.getElementById("mySidebar").style.width = "0";
-                                document.getElementById("main").style.marginLeft= "0";
-                            }
-                        </script>
-
-                    </form>
+                    </div>
                 </div>
-            </div>
+
         </nav>
         <!-- Header-->
         <header class="bg-dark py-5">
@@ -83,7 +72,12 @@
         </header>
         <!-- Section-->
         <section class="py-5">
+            <div class="aligncenter">
+                <label class="aligncenter" for="product-search"></label><input type="text" id="product-search" placeholder="Rechercher un produit" />
+            </div>
             <div class="container px-4 px-lg-5 mt-5">
+
+
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center" id="product-list">
 
 

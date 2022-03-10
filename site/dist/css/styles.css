@@ -76,6 +76,12 @@
   }
 }
 
+.aligncenter{
+    margin-left: 43.5%;
+    margin-right: auto;
+    width: 6em;
+}
+
 /* The sidebar menu */
 .sidebar {
     height: 100%; /* 100% Full-height */
