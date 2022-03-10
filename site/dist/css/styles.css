@@ -11307,3 +11307,7 @@ textarea.form-control-lg {
 .ecart{
     margin-top: -20px;
 }
+
+.col{
+    border: solid #47ACA4 ;
+}
