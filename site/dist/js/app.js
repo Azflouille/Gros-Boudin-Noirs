@@ -34,6 +34,21 @@ function init(){
         closeNav();
     });
 
+    document.querySelector("#case1").addEventListener( "click", e => {
+        cart.emptyCart();
+        ui.displayCart();
+    });
+
+    document.querySelector("#case2").addEventListener( "click", e => {
+        cart.emptyCart();
+        ui.displayCart();
+    });
+
+    document.querySelector("#case3").addEventListener( "click", e => {
+        cart.emptyCart();
+        ui.displayCart();
+    });
+
 
 }
 
