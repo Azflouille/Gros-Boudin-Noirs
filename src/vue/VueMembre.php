@@ -37,14 +37,14 @@ class VueMembre extends Vue
                 <head>
                     <title>My WishList</title>
                     <meta charset = "utf-8">
-                    <link rel="stylesheet" href="../../web/css/rendu.css"
+                    <link rel="stylesheet" href="../../site/css/rendu.css"
                 </head>
                 <body> 
                 <div class="content">
                  $content
                 </div>
                 </body><html>
-                END ;
+                END;
         return $html;
 
     }
