@@ -1,4 +1,4 @@
-import products from "./products.js";
+import products from "./product.js";
 import ui from "./ui.js";
 import cart from "./cart.js";
 
