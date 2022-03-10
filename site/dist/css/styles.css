@@ -11294,3 +11294,16 @@ textarea.form-control-lg {
 .imagee{
     height: 200px;
 }
+
+.apropo{
+    text-align: center;
+}
+
+.titre{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ecart{
+    margin-top: -20px;
+}
