@@ -7915,7 +7915,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: containerr;
+  background-color: #F2DCA4;
 }
 
 .bg-dark {
@@ -11398,6 +11398,19 @@ textarea.form-control-lg {
 
 #empty-cart{
     background-color: #93C8C4 ;
+}
+
+.boxB{
+    text-align: center  ;
+}
+
+#ouii{
+    margin-left: 44%;
+}
+
+.boitee{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
