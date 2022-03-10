@@ -14,9 +14,8 @@ $c = new \Slim\Container(["settings"=>[
 $app= new \Slim\App($c);
 
 session_start();
-
 $app->get('/', function(Request $rq, Response $rs, array $args): Response {
-    return (new Control\exempleController())->acceuil($rq,$rs,$args);
+    return (new Control\AcceuilCon())->acceuildeb($rq,$rs,$args);
 });
 
 
